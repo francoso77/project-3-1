@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './styles/theme';
 import styled, { css } from 'styled-components';
 
-export const Heading = styled.h1`
+/*export const Heading = styled.h1`
   color: purple;
 `;
 const changeBackground = (theme, bg) => css`
@@ -39,19 +39,13 @@ export const Container2 = styled(Container).attrs({ as: 'article' })`
     color: yellow;
   }
 `;
-
+*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Container bg="red">
-        <Heading>Oi</Heading>
-      </Container>
-      <Container2 bg="red">
-        <Heading>Olá</Heading>
-      </Container2>
-      <Heading>Oi Fora do Container</Heading>
+      <App />
     </ThemeProvider>
   </React.StrictMode>
 );
