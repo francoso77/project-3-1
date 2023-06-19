@@ -18,7 +18,7 @@ export default {
 export const Template = (args) => {
   return (
     <div>
-      <TextComponent {...args} />;
+      <TextComponent {...args} />
     </div>
   );
 };

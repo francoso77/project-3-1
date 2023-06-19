@@ -4,9 +4,10 @@ import { Heading } from '../Heading';
 
 export const LogoLink = ({ text, srcImg = '', link }) => {
   return (
-    <Heading>
+    <Heading size="small" uppercase>
       <Styled.Title href={link}>
-        {!!srcImg ? <img src={srcImg} alt={text} /> : <span>{text}</span>}
+        {!!srcImg && <img src={srcImg} alt={text} />}
+        {!srcImg && text}
       </Styled.Title>
     </Heading>
   );
