@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Title as SectionContainer } from '../SectionContainer/styles';
+import { Container as SectionContainer } from '../SectionContainer/styles';
 import { Title as Heading } from '../Heading/styles';
 
 const menuVisible = (theme) => css`
@@ -7,7 +7,7 @@ const menuVisible = (theme) => css`
   opacity: 1;
 `;
 
-export const Title = styled.div`
+export const Container = styled.div`
   ${({ theme, visible }) => css`
     position: fixed;
     z-index: 5;

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { Title as TitleHeading } from '../Heading/styles';
+import { Title as Heading } from '../Heading/styles';
 
-export const Title = styled.div`
+export const Container = styled.div`
   ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -13,7 +13,7 @@ export const Title = styled.div`
       text-align: center;
     }
 
-    ${TitleHeading}{
+    ${Heading}{
       margin-bottom: ${theme.spacings.xlarge};
     }
   `}

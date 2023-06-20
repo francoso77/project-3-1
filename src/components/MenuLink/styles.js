@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Title = styled.a`
+export const Container = styled.a`
   ${({ theme }) => css`
     font-size: ${theme.font.sizes.small};
     display: block;

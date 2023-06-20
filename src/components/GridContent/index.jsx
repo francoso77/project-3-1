@@ -7,7 +7,7 @@ import { TextComponent } from '../TextComponent';
 export const GridContent = ({ title, html, background }) => {
   return (
     <SectionBackground background={background}>
-      <Styled.Title>
+      <Styled.Container>
         <Heading uppercase colorDark={!background} as="h2">
           {title}
         </Heading>
@@ -16,7 +16,7 @@ export const GridContent = ({ title, html, background }) => {
             {html}
           </TextComponent>
         </Styled.Html>
-      </Styled.Title>
+      </Styled.Container>
     </SectionBackground >
   );
 };

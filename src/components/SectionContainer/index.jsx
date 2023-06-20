@@ -3,9 +3,9 @@ import * as Styled from './styles';
 
 export const SectionContainer = ({ children }) => {
   return (
-    <Styled.Title>
+    <Styled.Container>
       {children}
-    </Styled.Title>
+    </Styled.Container>
   );
 };
 

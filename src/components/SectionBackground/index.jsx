@@ -4,11 +4,11 @@ import { SectionContainer } from '../SectionContainer';
 
 export const SectionBackground = ({ children, background = false }) => {
   return (
-    <Styled.Title background={background}>
+    <Styled.Container background={background}>
       <SectionContainer>
         {children}
       </SectionContainer>
-    </Styled.Title>
+    </Styled.Container>
   );
 };
 

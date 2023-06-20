@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const Title = styled.div`
+export const Container = styled.div`
   ${({ theme }) => css`
     text-align: center;
     max-width: 58rem;
