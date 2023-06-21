@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { NavLinks } from '.';
 import links from './mock';
 

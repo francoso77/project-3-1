@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Title as Heading } from '../Heading/styles';
-import { Title as TextComponent } from '../TextComponent/styles';
+import { Container as TextComponent } from '../TextComponent/styles';
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -28,7 +27,6 @@ export const Image = styled.img`
     width: 100%;
     transition: all 300ms ease-in-out;
     
-
     &:hover{
       transform: scale(1.2) rotate(10deg);
     }

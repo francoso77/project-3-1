@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { GridText } from '.';
 import mock from './mock';
 

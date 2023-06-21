@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Title as Heading } from '../Heading/styles';
-import { Title as TextComponent } from '../TextComponent/styles';
+import { Container as TextComponent } from '../TextComponent/styles';
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -16,6 +16,12 @@ export const Grid = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: ${theme.spacings.large};
+    overflow: hidden;
+    width: 100%;
+
+    @media ${theme.media.lteMedium}{
+      grid-template-columns: 1fr;
+    }
   `}
 `;
 

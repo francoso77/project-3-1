@@ -1,4 +1,4 @@
-export default [
+/* eslint-disable import/no-anonymous-default-export */export default [
   {
     children: 'Link 1',
     link: '#target1',
