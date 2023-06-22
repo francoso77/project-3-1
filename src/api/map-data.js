@@ -1,4 +1,8 @@
-export const mapData = (pageData = [{}]) => {
+
+import { mapMenu } from './map-menu';
+import { mapSections } from './map-section';
+
+export const mapData = (pagesData = [{}]) => {
   return pagesData.map((data) => {
     const {
       footer_text: footerHtml = '',
@@ -12,8 +16,8 @@ export const mapData = (pageData = [{}]) => {
       footerHtml,
       slug,
       title,
-      sections,
-      menu,
+      sections: mapSections(sections),
+      menu: mapMenu(menu),
     };
   });
 };

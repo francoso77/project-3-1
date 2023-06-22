@@ -9,7 +9,7 @@ export const mapMenu = (menu = {}) => {
   } = menu;
 
   return {
-    nweTab,
+    newTab,
     text,
     link,
     srcImg,
